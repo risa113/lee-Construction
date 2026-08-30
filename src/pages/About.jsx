@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
@@ -349,7 +349,7 @@ export default function About() {
             <div className="lg:col-span-6">
               <div className="p-8 rounded-2xl bg-[#F8F7F2] border border-[#D4AF37]/35 space-y-6 shadow-xl">
                 <div className="w-12 h-12 rounded-xl bg-white p-1.5 border border-[#D4AF37] flex items-center justify-center shadow-[0_0_15px_rgba(184,142,16,0.2)]">
-                  <img src="/images/logo.png" alt="Lee Construction" className="w-full h-full object-contain" />
+                  <img src={siteImages.logo} alt="Lee Construction" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-lg font-bold uppercase tracking-wider text-[#111317]">
                   "WHERE INNOVATION MEETS CONSTRUCTION"

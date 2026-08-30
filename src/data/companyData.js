@@ -1,4 +1,7 @@
-﻿export const companyInfo = {
+import { siteImages } from './images';
+
+export const companyInfo = {
+
   name: "LEE CONSTRUCTION",
   tagline: "Where Innovation Meets Construction",
   shortTagline: "Where Innovation Meets Construction",
@@ -61,7 +64,7 @@ export const servicesData = [
     shortDesc: "Custom blueprints, modern architectural spatial layouts, and luxury residential elevations.",
     fullDesc: "Bespoke architectural design services tailored to tropical Tamil Nadu climates, functional family flows, and iconic modern elevations with sustainable materials.",
     icon: "DraftingCompass",
-    image: "/images/service-arch.jpg",
+    image: siteImages.serviceArch,
     features: ["Custom Spatial Planning", "Elevations & Façades", "Site & Sunpath Analysis", "Vastu-Compliant Layouts"]
   },
   {
@@ -71,7 +74,7 @@ export const servicesData = [
     shortDesc: "High-end bespoke villas and premium residential developments crafted with superior materials.",
     fullDesc: "Complete construction of signature luxury villas with high-strength structural engineering, earthquake-resistant design, and premium imported or heritage finishes.",
     icon: "Home",
-    image: "/images/service-luxury.jpg",
+    image: siteImages.serviceLuxury,
     features: ["Signature Villas", "Premium Foundation & RCC", "Waterproofing Standards", "High-End Stone & Wood Work"]
   },
   {
@@ -81,7 +84,7 @@ export const servicesData = [
     shortDesc: "Sleek, minimalist residential builds balancing open architecture, natural light, and modern comfort.",
     fullDesc: "Distinctive contemporary homes featuring cantilevered roofs, glass-curtain facades, double-height living areas, and energy-conscious architectural ventilation.",
     icon: "Building2",
-    image: "/images/service-contemporary.jpg",
+    image: siteImages.serviceContemporary,
     features: ["Minimalist Architecture", "Double-Height Atriums", "Natural Light Optimization", "Smart Home Ready"]
   },
   {
@@ -91,7 +94,7 @@ export const servicesData = [
     shortDesc: "Robust corporate offices, retail spaces, showrooms, and commercial architectural landmarks.",
     fullDesc: "Turnkey commercial engineering for business establishments in Thoothukudi and Tamil Nadu with high load capacities, fire-safety compliance, and striking street presence.",
     icon: "Building",
-    image: "/images/service-commercial.jpg",
+    image: siteImages.serviceCommercial,
     features: ["Office Complexes & Retail", "Structural Steel & Concrete", "Acoustic & HVAC Provisions", "Regulatory Approvals"]
   },
   {
@@ -101,7 +104,7 @@ export const servicesData = [
     shortDesc: "Refined spatial styling, custom modular kitchens, mood lighting, and bespoke luxury woodwork.",
     fullDesc: "Curated interior architecture delivering cohesive palettes, concealed ambient illumination, Italian marble and teak accents, and space-maximizing bespoke cabinetry.",
     icon: "Armchair",
-    image: "/images/service-interior.jpg",
+    image: siteImages.serviceInterior,
     features: ["Bespoke Luxury Joinery", "Modular Kitchens & Wardrobes", "Architectural Lighting Schemes", "False Ceiling & Wall Finishes"]
   },
   {
@@ -111,7 +114,7 @@ export const servicesData = [
     shortDesc: "Complete hassle-free project execution from blueprint approval to final key handover.",
     fullDesc: "Single-point accountability where we manage all permits, material procurement, structural coordination, interior finishing, and electrical/plumbing execution.",
     icon: "KeyRound",
-    image: "/images/service-turnkey.jpg",
+    image: siteImages.serviceTurnkey,
     features: ["Single-Point Management", "Fixed Timelines & Cost Control", "Material Sourcing & Testing", "Zero-Hassle Handover"]
   },
   {
@@ -121,7 +124,7 @@ export const servicesData = [
     shortDesc: "Hyper-realistic 3D architectural renders, VR walkthroughs, and cinematic day/night lighting models.",
     fullDesc: "Photorealistic digital twins of your planned residence or commercial facility before a single brick is laid, allowing total clarity in design decision-making.",
     icon: "Eye",
-    image: "/images/service-3d.jpg",
+    image: siteImages.service3D,
     features: ["Photorealistic Exterior Renders", "Interior Walkthrough Renders", "Material & Lighting Simulation", "Virtual Reality Preview"]
   },
   {
@@ -131,10 +134,11 @@ export const servicesData = [
     shortDesc: "On-site quality supervision, structural coordination, safety audits, and milestone management.",
     fullDesc: "Rigorous construction engineering protocols ensuring concrete strength testing, MEP alignment, site safety standards, and strict milestone tracking.",
     icon: "CheckSquare",
-    image: "/images/service-mgmt.jpg",
+    image: siteImages.serviceManagement,
     features: ["Civil Engineering Oversight", "Structural QA/QC Inspections", "Vendor & Material Audits", "Milestone Tracking"]
   }
 ];
+
 
 export const processSteps = [
   {
@@ -215,11 +219,11 @@ export const projectsData = [
     location: "Thoothukudi, Tamil Nadu",
     area: "4,800 Sq.Ft.",
     description: "A signature multi-level luxury residence blending contemporary rectilinear concrete framing with warm teak cladding, floor-to-ceiling glass expanses, and an elevated terrace garden.",
-    image: "/images/project-01.jpg",
+    image: siteImages.project1,
     gallery: [
-      "/images/project-01.jpg",
-      "/images/project-02.jpg",
-      "/images/service-interior.jpg"
+      siteImages.project1,
+      siteImages.project2,
+      siteImages.serviceInterior
     ],
     highlights: ["Custom cantilevered architecture", "Double-height central living", "Private courtyard garden", "Integrated solar & rainwater harvesting"]
   },
@@ -233,10 +237,10 @@ export const projectsData = [
     location: "Tamil Nadu",
     area: "3,650 Sq.Ft.",
     description: "Clean geometric volumes and minimalist luxury living. Engineered for maximum passive ventilation and ambient daylighting with curated stone textures and water features.",
-    image: "/images/project-02.jpg",
+    image: siteImages.project2,
     gallery: [
-      "/images/project-02.jpg",
-      "/images/service-contemporary.jpg"
+      siteImages.project2,
+      siteImages.serviceContemporary
     ],
     highlights: ["Minimalist monolithic facade", "Natural stone & glass finishes", "Acoustic private suites", "Smart climate control integration"]
   },
@@ -250,10 +254,10 @@ export const projectsData = [
     location: "Thoothukudi, Tamil Nadu",
     area: "12,500 Sq.Ft.",
     description: "A prestigious commercial corporate building featuring high-span structural steel framing, structural glazing, optimized commercial floor plans, and grand entryway reception.",
-    image: "/images/project-03.jpg",
+    image: siteImages.project3,
     gallery: [
-      "/images/project-03.jpg",
-      "/images/service-commercial.jpg"
+      siteImages.project3,
+      siteImages.serviceCommercial
     ],
     highlights: ["High-visibility frontage", "Energy-efficient structural glass", "Multi-tenant flexible layouts", "Underground parking & high-speed elevators"]
   },
@@ -267,15 +271,16 @@ export const projectsData = [
     location: "Thoothukudi",
     area: "3,200 Sq.Ft.",
     description: "Comprehensive interior turnkey execution characterized by bespoke Italian marble flooring, fluted wall paneling, custom-built kitchen cabinetry, and layered lighting scenes.",
-    image: "/images/project-04.jpg",
+    image: siteImages.project4,
     gallery: [
-      "/images/project-04.jpg",
-      "/images/service-interior.jpg",
-      "/images/about-intro.jpg"
+      siteImages.project4,
+      siteImages.serviceInterior,
+      siteImages.aboutIntro
     ],
     highlights: ["Italian marble & fluted paneling", "Concealed LED architectural profiles", "Imported sanitaryware & brass fittings", "Hand-crafted modular storage"]
   }
 ];
+
 
 export const companyStatsPlaceholder = [
   {

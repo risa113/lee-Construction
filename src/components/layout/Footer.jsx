@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   ArrowUp, 
@@ -11,6 +11,8 @@ import {
   Sparkles
 } from 'lucide-react';
 import { companyInfo, servicesData } from '../../data/companyData';
+import { siteImages } from '../../data/images';
+
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -72,7 +74,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 bg-white rounded-xl p-1.5 border border-[#D4AF37]/40 flex items-center justify-center shadow-sm">
                 <img 
-                  src="/images/logo.png" 
+                  src={siteImages.logo} 
                   alt="Lee Construction" 
                   className="w-full h-full object-contain"
                 />

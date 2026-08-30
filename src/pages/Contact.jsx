@@ -400,7 +400,7 @@ export default function Contact() {
               <div className="p-6 rounded-3xl bg-white border border-[#D4AF37]/30 space-y-4 shadow-lg">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-white p-1 border-2 border-[#D4AF37]/40 flex items-center justify-center shadow-sm">
-                    <img src="/images/logo.png" alt="Lee Construction" className="w-full h-full object-contain" />
+                    <img src={siteImages.logo} alt="Lee Construction" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h3 className="text-sm font-black uppercase tracking-wider text-[#111317]">LEE CONSTRUCTION</h3>

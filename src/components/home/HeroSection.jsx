@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MessageSquare, ChevronDown, Sparkles, Building2, ShieldCheck } from 'lucide-react';
@@ -52,7 +52,7 @@ export default function HeroSection() {
             
             <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-2xl p-2.5 shadow-[0_12px_30px_rgba(184,142,16,0.2)] border-2 border-[#D4AF37] mx-auto flex items-center justify-center">
               <img 
-                src="/images/logo.png" 
+                src={siteImages.logo} 
                 alt="Lee Construction Official Mark" 
                 className="w-full h-full object-contain filter drop-shadow-sm group-hover:scale-105 transition-transform duration-300"
               />

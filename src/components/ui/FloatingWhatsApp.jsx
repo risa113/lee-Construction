@@ -1,7 +1,8 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, X, Send } from 'lucide-react';
 import { companyInfo } from '../../data/companyData';
+import { siteImages } from '../../data/images';
 
 export default function FloatingWhatsApp() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,11 +27,12 @@ export default function FloatingWhatsApp() {
                 <div className="relative">
                   <div className="w-10 h-10 rounded-full bg-white p-1 border-2 border-[#D4AF37]/40 flex items-center justify-center shadow-sm">
                     <img 
-                      src="/images/logo.png" 
+                      src={siteImages.logo} 
                       alt="Lee Construction" 
                       className="w-full h-full object-contain"
                     />
                   </div>
+
                   <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-white" />
                 </div>
                 <div>
