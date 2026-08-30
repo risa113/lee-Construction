@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme {
+  /* ======================================================== */
+  /* LUXURY ARCHITECTURAL LIGHT THEME PALETTE                */
+  /* 1. Canvas: #FAFAF8 (Pristine Warm Alabaster / Limestone) */
+  /* 2. Primary Onyx Text: #111317 (High Contrast Crisp Text)*/
+  /* 3. Imperial Gold Accent: #B88E10 / #D4AF37               */
+  /* 4. Architectural Platinum / Card: #FFFFFF / #F3F2EC     */
+  /* ======================================================== */
+  
+  /* 1. Canvas & Surface */
+  --color-canvas: #FAFAF8;
+  --color-canvas-subtle: #F3F2EC;
+  --color-canvas-elevated: #FFFFFF;
+  --color-card-bg: #FFFFFF;
+  --color-card-border: rgba(184, 142, 16, 0.2);
+
+  /* 2. Text Colors */
+  --color-onyx: #111317;
+  --color-slate-dark: #2B303A;
+  --color-slate-body: #4A515D;
+  --color-slate-muted: #7B8494;
+
+  /* 3. High-Contrast Gold Accents */
+  --color-gold: #B88E10;
+  --color-gold-bright: #D4AF37;
+  --color-gold-light: #F7E5A9;
+  --color-gold-dark: #8C621E;
+  --color-gold-subtle: rgba(184, 142, 16, 0.08);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Syne', sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Cinzel', serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  :root {
+    --gold: #B88E10;
+    --gold-bright: #D4AF37;
+    --canvas: #FAFAF8;
+    --card-bg: #FFFFFF;
+    --text-primary: #111317;
+    --text-body: #4A515D;
+    --text-muted: #7B8494;
+  }
+
+  body {
+    background-color: #FAFAF8;
+    color: #111317;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    letter-spacing: -0.01em;
+    color: #111317;
+  }
+
+  .font-serif-luxury {
+    font-family: 'Cormorant Garamond', 'Cinzel', serif;
+  }
+
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+/* ======================================================== */
+/* LUXURY LIGHT THEME ARCHITECTURAL UTILITIES               */
+/* ======================================================== */
+
+/* Architectural Blueprint Grid for Light Background */
+.architectural-grid {
+  background-size: 64px 64px;
+  background-image: 
+    linear-gradient(to right, rgba(184, 142, 16, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(184, 142, 16, 0.07) 1px, transparent 1px);
+}
+
+.architectural-grid-fine {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+/* High-Contrast Metallic Imperial Gold Text Gradient */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #7A550F 0%, #B88E10 35%, #D4AF37 65%, #8C621E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 800;
+}
+
+/* Dark Onyx Metallic Gradient */
+.onyx-gradient-text {
+  background: linear-gradient(135deg, #111317 0%, #2B303A 60%, #4A515D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Premium Gold Metallic Luxury Button */
+.gold-btn-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5D77F 45%, #C29618 100%);
+  color: #111317;
+  font-weight: 700;
+  box-shadow: 0 4px 20px -2px rgba(184, 142, 16, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+.gold-btn-gradient:hover {
+  background: linear-gradient(135deg, #DFBD4D 0%, #FFE599 45%, #D4A726 100%);
+  box-shadow: 0 8px 28px 0px rgba(184, 142, 16, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+/* Architectural White Luxury Card */
+.luxury-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(184, 142, 16, 0.22);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+.luxury-card:hover {
+  border-color: rgba(184, 142, 16, 0.55);
+  box-shadow: 0 20px 45px -10px rgba(184, 142, 16, 0.15), 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Subtle Warm Gold Radial Glows on Light Canvas */
+.ambient-gold-glow {
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(250, 250, 248, 0) 70%);
+}
+
+/* Light Theme Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAF8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5D7DC;
+  border-radius: 3px;
+  border: 1px solid rgba(184, 142, 16, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B88E10;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
