@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Sidebar from './components/layout/Sidebar';
 import Footer from './components/layout/Footer';
@@ -23,7 +23,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
       
-      <div className="min-h-screen bg-[#0A0B0D] text-[#E6E8EC] flex flex-col selection:bg-[#E5B82C] selection:text-black">
+      <div className="min-h-screen bg-[#FAFAF8] text-[#111317] flex flex-col selection:bg-[#D4AF37] selection:text-white">
         {/* Navigation / Sidebar */}
         <Sidebar />
 
