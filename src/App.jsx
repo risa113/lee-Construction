@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
 import Sidebar from './components/layout/Sidebar';
 import Footer from './components/layout/Footer';
 import FloatingWhatsApp from './components/ui/FloatingWhatsApp';
